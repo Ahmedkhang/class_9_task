@@ -2,112 +2,71 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <>
+      {/* Main container with max-width and centering */}
+      <div className="relative w-full overflow-hidden bg-opacity-70 bg-cover bg-center  z-0" style={{ backgroundImage: "url('/bg_house.jpg')" }}>
+        {/* Overlay div to add opacity to background image */}
+        <div className="absolute inset-0 w-full h-full bg-zinc-50  bg-opacity-80 -z-50"></div>
+
+        {/* Content container with max-width and centered */}
+        <div className="w-[100%] h-[100%] lg:flex relative z-20 ">
+          {/* Left div */}
+          <div className=" mt-[10vh] w-[100%] h-full lg:w-[50%]">
+            <h1 className="w-[100%] h-15 text-blue-900 font-extrabold text-center text-4xl md:text-6xl">Governor Sindh</h1>
+            <h1 className="mt-1 w-[100%] h-15 text-blue-900 text-center text-2xl md:text-5xl lg:w-[100%]">Kamran Khan Tessori</h1>
+            <p className="mt-5 w-[100%] h-15 text-sky-400 text-center font-bold text-2xl lg:text-4xl">
+              Certified Cloud Applied Generative AI Engineer (Gen Eng)
+            </p>
+            <p className="mt-5 w-[100%] h-15 text-blue-900 font-bold text-center text-2xl">Earn up to $5,000 / month</p>
+            <p className="mt-5 w-[100%] h-15 text-blue-900 text-center font-extrabold text-2xl lg:w-[100%]">
+              Now admissions are open in Hyderabad
+            </p>
+
+            <section className="md:flex mt-5 m-5 gap-10">
+              <button className="w-[100%] h-[10vh] bg-blue-900 text-white text-lg rounded md:ml-5 md:mt-5 lg:w-[100%]">APPLY NOW</button>
+              <p className="text-blue-900 w-[100%] py-5 text-center">
+                <span className=" w-[100%] h-[10vh] space-x-3  text-blue-900 font-extrabold text-2xl">562,143</span>
+                <br /> Accepted Applications
+              </p>
+            </section>
+          </div>
+
+          {/* Right div */}
+          <div className="w-[100%] lg:h-full lg:w-[55%]">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src="/governer.png"
+              alt="Governor Pic"
+              width={500}
+              height={500}
+              className="w-[100%] lg:ml-40 lg:h-auto lg-70 object-cover mt-10"
             />
-          </a>
+          </div>
         </div>
+
+        
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div>
+         <h1 className="px-3 py-10 w-[100%] h-30 text-blue-900 text-xl lg:3xl font-bold text-center bg-zinc-50">Certified Cloud Applied Generative AI Engineer (GenEng) and Solopreneur Developing Billion-Dollar Valued Developers and Solopreneurs
+         </h1>
+         <p className="px-3 py-5 w-[100%] h-50 bg-zinc-50 text-center text-gray-700 text-md md:text-lg lg:text-xl lg:font-semibold">The pace of technological change is accelerating, big players like Microsoft, Amazon, Google, and OpenAI are winning by providing infrastructure, large AI foundation models, frameworks, 3D Metaverse experiences, and massive distribution networks. Solopreneurs trained in this program will win by automating work typically outsourced to employees, by directly connecting to customers by eliminating the middleman, and by developing vertical metaverses, thus paving the way for the first billion-dollar valued solopreneur businesses. This program has the objective to train this new breed of billion-dollar solopreneurs. These solopreneurs will adopt the ultra-lean business model and work independently and will not need to hire employees or other team members.
+
+</p>
+
+<div className="w-[100%] h-[100vh] lg:h-[100vh] bg-zinc-50 ">
+      <div className="p-10 w-[100%] gap-5 h-[80vh] lg:h-[60vh] md:h-[45vh] md:flex md:w-[100%] ">
+        <img src="/earn_as_you_learn.jpg" className="mt-3 w-[100%] h-[30vh] md:w-[50%] shadow-lg lg:h-[60vh] rounded-lg"></img>
+        <img src="/automation.jpg" className="mt-3 w-[100%] h-[30vh] md:w-[50%] md:[h-40vh] lg:h-[60vh] h-30 shadow-lg rounded-lg"></img>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="w-[100%] h-[100vh] md:h-[55vh] mr-3 mt-5 p-10 gap-5 md:flex bg-zinc-50">
+             <img src="/genomics.jpg" className="mt-3 w-[100%] h-[25vh] md:w-[31%] md:h-[40vh]   shadow-lg rounded-lg"></img>
+             <img src="prog-basics.jpg" className="mt-3 w-[100%] h-[25vh] md:w-[31%] md:h-[40vh] shadow-lg rounded-lg"></img>
+             <img src="metaverse.jpg" className="mt-3  w-[100%] h-[25vh] md:w-[31%] md:h-[40vh]  shadow-lg rounded-lg"></img>
       </div>
-    </main>
+    </div>
+        </div>
+
+
+    </>
   );
 }
